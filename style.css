@@ -1,0 +1,97 @@
+/*
+ Theme:          KungFuGrep - Paperback
+ Theme URI:      https://www.kungfugrep.com
+ Description:    KungFuGrep - Paperback
+ Author:         Chris Klosowski
+ Author URI:     https://www.kungfugrep.com
+ Template:       paperback
+ Version:        1.0.0
+*/
+
+@import url("../paperback/style.css");
+
+.site-identity { padding: 2% 0 3% 0; }
+
+.ssbp-list a {
+	color: #fff !important;
+}
+
+.edd-extensions-wrapper {
+	text-align: center;
+	background-color: #eeeeee;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.edd-extension { display: inline-block; text-align: center; }
+
+.site-description { font-size: 15px; }
+
+body { overflow: hidden; }
+
+.ssbp-wrap { z-index: 99 !important; }
+
+#secondary {
+	text-align: justify;
+}
+
+#secondary input {
+	width: 100%;
+	text-align: center;
+}
+
+#secondary h2 { text-align: center; }
+
+#mc4wp_form_widget-6,
+#mc4wp_form_widget-7 {
+ background: #343e47 ;
+ border-radius: 7px;
+ color: #fff;
+ padding: 15px;
+}
+#mc4wp_form_widget-6 h2,
+#mc4wp_form_widget-7 h2 {
+    color: #fff;
+    font-size: 32px;
+}
+#mc4wp_form_widget-6 input[type="submit"],
+#mc4wp_form_widget-7 input[type="submit"] {
+    background: #78AB46 ;
+}
+.mc-inputs input { margin-bottom: 3px; }
+
+.grid-thumb p { text-align: justify; }
+
+.mc4wp-checkbox-wp-comment-form input {
+	width: initial !important;
+	float: none !important;
+}
+
+input[type='checkbox'] {
+	-webkit-appearance: checkbox !important;
+}
+
+@media (max-width: 760px) {
+    .footer-widgets .widget:first-of-type:nth-last-of-type(2), .footer-widgets .widget:first-of-type:nth-last-of-type(2) ~ .widget { width: 100%; }
+}
+
+.page-template-full-width .site-main {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.page-template-full-width .entry-header { text-align: center; }
+.footer-widgets aside { width: 100%; }
+
+/* MC Footer */
+#mc_embed_signup_scroll { text-align: center; }
+#mc_embed_signup_scroll h2 { color: #fff; }
+.mc-field-group input[type="email"] { width: 45%; }
+.mc-field-group input[type="submit"] { background-color: #ecf1f7; color: #424A55 }
+
+.sumome-share-client-wrapper { margin-left: 7px !important; }
+a[data-sumome-share="sumome"] {
+  display: none !important;
+}
+
+#edd-free-downloads-modal label.edd-free-downloads-checkbox-label { padding: 1px 0 0 1px; }
