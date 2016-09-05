@@ -89,9 +89,22 @@ input[type='checkbox'] {
 .mc-field-group input[type="email"] { width: 45%; }
 .mc-field-group input[type="submit"] { background-color: #ecf1f7; color: #424A55 }
 
-.sumome-share-client-wrapper { margin-left: 7px !important; }
-a[data-sumome-share="sumome"] {
-  display: none !important;
-}
 
 #edd-free-downloads-modal label.edd-free-downloads-checkbox-label { padding: 1px 0 0 1px; }
+
+.sponsored {
+	display: block;
+	color: #666;
+	font-weight: 200;
+	font-size: .9em;
+	text-transform: uppercase;
+}
+
+/* Ratings */
+.ta_rating_container { width: 100% !important; }
+
+ins.adsbygoogle { background: #fff; }
+
+.hero-posts .hero-post .entry-title {
+	font-size: 45px;
+}

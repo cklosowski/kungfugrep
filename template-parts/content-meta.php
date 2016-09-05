@@ -18,15 +18,20 @@ if ( class_exists( 'Easy_Digital_Downloads' ) ) {
 ?>
 
 	<?php if ( is_single() && ( has_category() || ! empty( $post_tags ) || ! empty( $download_tags ) || ! empty( $download_cats ) ) ) { ?>
-		<div style="text-align: center">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- Kung Fu Grep Single -->
-		<ins class="adsbygoogle"
-		     style="display:inline-block;width:728px;height:90px"
-		     data-ad-client="ca-pub-6027744636789441"
-		     data-ad-slot="6089699357"></ins>
-		<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-		</div>
+		<p style="text-align: center;">
+		<span class="sponsored">Sponsored by:</span>
+		<?php $random = rand( 0, 1 ); ?>
+		<?php if ( empty( $random ) ) : ?>
+			<?php if ( ! wp_is_mobile() ) : ?>
+				<a href="https://postpromoterpro.com/?ref=1" title="Post Promoter Pro"><img src="https://postpromoterpro.com/wp-content/uploads/2016/06/728x90-1.png" alt="Post Promoter Pro" /></a>
+			<?php else: ?>
+				<a href="https://postpromoterpro.com/?ref=1" title="Post Promoter Pro"><img src="https://postpromoterpro.com/wp-content/uploads/2016/06/234x60-white-grad.png" alt="Post Promoter Pro" /></a>
+			<?php endif; ?>
+		<?php else: ?>
+			<a href="http://chrisk.io/i/siteground"><img src="https://ua.siteground.com/img/banners/application/wordpress/468x60.gif" alt="Web Hosting" width="468" height="60" border="0"></a>
+		<?php endif; ?>
+		</p>
+
 		<div class="entry-meta">
 			<ul class="meta-list">
 
