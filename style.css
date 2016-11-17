@@ -108,3 +108,16 @@ ins.adsbygoogle { background: #fff; }
 .hero-posts .hero-post .entry-title {
 	font-size: 45px;
 }
+
+.ssbp-total-shares {
+	background-color: #EFF
+}
+
+.widget-area button {
+	background-color: #3a0d3f;
+}
+
+.widget-area button a,
+.widget-area button a:hover {
+	color: #fff;
+}

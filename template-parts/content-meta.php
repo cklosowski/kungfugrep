@@ -28,7 +28,8 @@ if ( class_exists( 'Easy_Digital_Downloads' ) ) {
 				<a href="https://postpromoterpro.com/?ref=1" title="Post Promoter Pro"><img src="https://postpromoterpro.com/wp-content/uploads/2016/06/234x60-white-grad.png" alt="Post Promoter Pro" /></a>
 			<?php endif; ?>
 		<?php else: ?>
-			<a href="http://chrisk.io/i/siteground"><img src="https://ua.siteground.com/img/banners/application/wordpress/468x60.gif" alt="Web Hosting" width="468" height="60" border="0"></a>
+			<a href="https://www.siteground.com/index.htm?afcode=ffb91852be1bd8209142cb63ca4ea265
+"><img src="https://ua.siteground.com/img/banners/application/wordpress/468x60.gif" alt="Web Hosting" width="468" height="60" border="0"></a>
 		<?php endif; ?>
 		</p>
 

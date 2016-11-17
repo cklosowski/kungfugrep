@@ -7,7 +7,7 @@ function kfg_add_fs_footer( $text ) {
 add_filter( 'paperback_footer_text', 'kfg_add_fs_footer', 10, 1 );
 
 function kfg_enqueue_scripts() {
-	wp_register_script( 'share-counts', get_stylesheet_directory_uri() . '/scripts/share-counts.js' );
+	wp_register_script( 'share-counts', '//newsharecounts.s3-us-west-2.amazonaws.com/nsc.js' );
 	wp_enqueue_script( 'share-counts' );
 }
 add_action( 'wp_enqueue_scripts', 'kfg_enqueue_scripts' );
@@ -21,7 +21,7 @@ function kfg_alter_tag_title( $title ) {
 add_filter( 'get_the_archive_title', 'kfg_alter_tag_title', 10, 1 );
 
 function kfg_additional_js() {
-	if ( ! wp_is_mobile() &&  is_single() ) :
+	if ( ! wp_is_mobile() && is_single() ) :
 ?>
 <style>
 .kfg-subscribe {
@@ -31,8 +31,8 @@ function kfg_additional_js() {
   height: 35px;
   left: 15%;
   color: #fff;
-  background-color: #1796c6;
-  padding: 3px 10px 0 10px;
+  background-color: #992222;
+  padding: 3px 20px 0 20px;
   z-index: 9999;
 }
 .kfg-subscribe a {
@@ -137,16 +137,11 @@ function kfg_the_content( $content ) {
 		return $content;
 	}
 
-	return '<p style="text-align: center;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Kung fu Grep Top post -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6027744636789441"
-     data-ad-slot="4894849757"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script></p>' . $content;
+	return '<amp-ad width=300 height=250
+      type="adsense"
+      data-ad-client="ca-pub-6027744636789441"
+      data-ad-slot="4894849757">
+ </amp-ad>' . $content;
 
 }
 add_filter( 'the_content', 'kfg_the_content', 10, 1 );
