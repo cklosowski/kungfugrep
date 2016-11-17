@@ -121,3 +121,26 @@ ins.adsbygoogle { background: #fff; }
 .widget-area button a:hover {
 	color: #fff;
 }
+
+/** Homepage Hero */
+.homepage-hero {
+	z-index: 1;
+	text-align: center !important;
+	min-height: 250px;
+}
+.homepage-hero h2,
+.homepage-hero {
+	color: #fff
+}
+
+.homepage-hero h2 {
+	margin-bottom: 0;
+}
+
+.homepage-hero .hero-post {
+	padding: 2% 0;
+}
+
+.homepage-hero .hero-text button {
+	background-color: #4ab9ad;
+}
